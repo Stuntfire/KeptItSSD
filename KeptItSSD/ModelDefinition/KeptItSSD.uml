@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="49370c72-aa24-4d9d-9c37-3e914031234b"
   name="KeptItSSD" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,747 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="33d7bc93-dee2-4ac0-abe4-74e468396cb1"
+        name="KeptItSSD_Drawing"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="a577b12a-58e4-4ae2-b80f-9b65476e89d1"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="77fec39f-b5ca-466d-aa7d-f4fa62e0d0c9"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="KeptItSSD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cbc297c2-4d7f-4b75-85d2-10e271ca8bb1"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="KeptItSSD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="30e4b79d-5f60-47cb-8d40-69b9619d6848"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4d49feaf-8f8b-480f-a7cd-e8ab9acc6b47"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="KeptItSSD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cbc297c2-4d7f-4b75-85d2-10e271ca8bb1"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5555fe5d-9426-4958-a220-752a09a2cbdd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b6e0d35a-b234-4919-84e6-a6254d9191f5"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="30e4b79d-5f60-47cb-8d40-69b9619d6848"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4d49feaf-8f8b-480f-a7cd-e8ab9acc6b47"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1f4fead1-740b-4062-9b83-c85b23cb9a39"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="77fec39f-b5ca-466d-aa7d-f4fa62e0d0c9"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e675b560-2203-424a-8b30-de8ab5007c5c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e3f20242-2cbf-41ab-b264-681ed2f96c64"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ad326410-b39a-4b05-887b-a3c36791ea2d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="KeptItSSD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="be820fab-7da8-437e-8548-9cdfd72421f3"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="KeptItSSD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6cb68032-4f53-46c9-a125-c397b969dfdd"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7997251d-0d79-4499-89cc-297c2eaeb47c"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="KeptItSSD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="be820fab-7da8-437e-8548-9cdfd72421f3"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7bbfdffd-7245-4215-8b70-f0a1114bbe9a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6cb68032-4f53-46c9-a125-c397b969dfdd"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8252485b-955e-4988-a488-33728613d83b"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7997251d-0d79-4499-89cc-297c2eaeb47c"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8d709f98-a13d-4dc9-a60c-1f7713051b15"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ad326410-b39a-4b05-887b-a3c36791ea2d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8156e56b-9640-45c7-9737-0ef98abd885c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="12beba9c-3ec3-4cf5-9a43-a11dd8efb042"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9b30b034-b772-472f-a743-cb7f32b3ff46"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="KeptItSSD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="dfff6920-ad07-4594-924b-d3446aa93219"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="KeptItSSD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3f868f23-8a41-4b08-bc60-f2de220b1611"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6d9c2f22-f401-4c36-a879-c4dbf793f935"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="KeptItSSD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="dfff6920-ad07-4594-924b-d3446aa93219"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="dc33b6eb-0fa8-4a59-98d8-c909eb55212c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8d1d5ac7-3d63-47ed-bc50-4460ba474d92"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3f868f23-8a41-4b08-bc60-f2de220b1611"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6d9c2f22-f401-4c36-a879-c4dbf793f935"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80cde254-92e6-4fb3-85f7-f88cf83bfea4"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9b30b034-b772-472f-a743-cb7f32b3ff46"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ca9a659a-f30e-4c45-96ed-3fc10a17e5b8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="77161510-e6fb-4d6b-9f38-386998d389f4"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="edb4c7bc-40d8-486b-be47-4276af875266"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="KeptItSSD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="26ae739b-15ec-4fc2-b088-beba0b14d73c"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="KeptItSSD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c7992571-537c-4bee-8e7d-7c7f854a223a"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e761699f-afef-40ff-af2c-aee87700ab25"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="KeptItSSD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="26ae739b-15ec-4fc2-b088-beba0b14d73c"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1440b28d-6d97-494a-b8d8-fc944e9fdfc9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="21212ad0-70c1-402f-9294-c05810d87c56"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c7992571-537c-4bee-8e7d-7c7f854a223a"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e761699f-afef-40ff-af2c-aee87700ab25"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8fab48dd-8fb8-478a-a51b-de027460ed4e"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+                LastKnownName="Admin"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="edb4c7bc-40d8-486b-be47-4276af875266"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6e3c8035-6c37-4831-bf2d-221b09764fe2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KeptItSSD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+                LastKnownName="System"
+                LastKnownLocation="KeptItSSD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="5f96cba4-3d6a-4f99-a76a-0ad9bbdff175"
+            name="Admin"
+            isActor="false"
+            lifelineDisplayName="Admin">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b6e0d35a-b234-4919-84e6-a6254d9191f5"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1f4fead1-740b-4062-9b83-c85b23cb9a39"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8252485b-955e-4988-a488-33728613d83b"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8d709f98-a13d-4dc9-a60c-1f7713051b15"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8d1d5ac7-3d63-47ed-bc50-4460ba474d92"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="80cde254-92e6-4fb3-85f7-f88cf83bfea4"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="21212ad0-70c1-402f-9294-c05810d87c56"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="KeptItSSD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8fab48dd-8fb8-478a-a51b-de027460ed4e"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="KeptItSSD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e78dd45c-bf7c-4a71-a606-82e2124b497b"
+            name="System"
+            isActor="false"
+            lifelineDisplayName="System">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="cbc297c2-4d7f-4b75-85d2-10e271ca8bb1"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="77fec39f-b5ca-466d-aa7d-f4fa62e0d0c9"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="be820fab-7da8-437e-8548-9cdfd72421f3"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ad326410-b39a-4b05-887b-a3c36791ea2d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dfff6920-ad07-4594-924b-d3446aa93219"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9b30b034-b772-472f-a743-cb7f32b3ff46"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="26ae739b-15ec-4fc2-b088-beba0b14d73c"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="KeptItSSD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="edb4c7bc-40d8-486b-be47-4276af875266"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="KeptItSSD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="bbf30395-ccc8-4194-bd34-78a527d035ae"
+            name="Select Hours"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b6e0d35a-b234-4919-84e6-a6254d9191f5"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="30e4b79d-5f60-47cb-8d40-69b9619d6848"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b2db9c3e-c662-463e-b483-2dc198945695"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4d49feaf-8f8b-480f-a7cd-e8ab9acc6b47"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f4fead1-740b-4062-9b83-c85b23cb9a39"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1c468242-06b9-443d-8618-ae69e701106d"
+            name="Get Hours"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8252485b-955e-4988-a488-33728613d83b"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6cb68032-4f53-46c9-a125-c397b969dfdd"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="affcdd79-d447-4e13-aa29-f2eec524bdb2"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7997251d-0d79-4499-89cc-297c2eaeb47c"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d709f98-a13d-4dc9-a60c-1f7713051b15"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="17c5cc18-12a8-4217-b885-0a994d7f1afa"
+            name="Edit"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d1d5ac7-3d63-47ed-bc50-4460ba474d92"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3f868f23-8a41-4b08-bc60-f2de220b1611"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="df1fa6da-3d4f-4e6b-bc67-ad313fc807f0"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6d9c2f22-f401-4c36-a879-c4dbf793f935"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80cde254-92e6-4fb3-85f7-f88cf83bfea4"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8f8e5735-545c-430e-87c9-904420e4bda3"
+            name="Create User"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="21212ad0-70c1-402f-9294-c05810d87c56"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c7992571-537c-4bee-8e7d-7c7f854a223a"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4c58ab34-ed96-4742-a022-c2db73a8d7a6"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e761699f-afef-40ff-af2c-aee87700ab25"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="KeptItSSD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8fab48dd-8fb8-478a-a51b-de027460ed4e"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="KeptItSSD.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5555fe5d-9426-4958-a220-752a09a2cbdd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e675b560-2203-424a-8b30-de8ab5007c5c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7bbfdffd-7245-4215-8b70-f0a1114bbe9a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8156e56b-9640-45c7-9737-0ef98abd885c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="dc33b6eb-0fa8-4a59-98d8-c909eb55212c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ca9a659a-f30e-4c45-96ed-3fc10a17e5b8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1440b28d-6d97-494a-b8d8-fc944e9fdfc9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6e3c8035-6c37-4831-bf2d-221b09764fe2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
